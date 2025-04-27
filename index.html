@@ -1,0 +1,287 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Karthigairajan-M</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script src="https://kit.fontawesome.com/bd6a507ad6.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<style>
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+.lr{
+	color: black;
+}
+</style>
+
+</head> 
+<body>
+
+    
+	
+    <div id="header">
+        <div class="container">
+            <nav class="colll">
+            	<div class="colll1">
+                    <p class="namee">KARTHIGAIRAJAN</p>
+                </div>
+            <div class="colll2"><center>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Project</a></li>
+                    <li><a href="#certificate">Certificate</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul></center>
+            </div>
+            <div class="colll3">
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+
+                
+            </div>
+            </nav>
+            <a href="#header" class="circle"><i class="fa-solid fa-angles-up up"></i></a>
+            <div class="header-text">
+                <h1>Hi, I'm Karthigairajan M</h1>
+                <p>Web Developer</p><br>
+                <p class="desc">Innovative interfaces transform user interactions into delightful journeys, blending creativity with usability to ensure unforgettable experiences.
+                    <br><a href="#contact" class="btn btn2">Contact Me &nbsp &nbsp <i class="fa-regular fa-paper-plane"> </i></a></p>
+            </div>
+        </div>
+    </div>
+	<!----------------------------------About-------------------->
+
+<div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="para">Enthusiastic  graduate in computer science and a passion for Web development. Proficient in React JS. Eager to contribute to a dynamic team and apply problem solving skills in a collaborative environment.</p>
+                    <a href="images/Karthigairajan_M.pdf" download="Karthigairajan" class="btn btn2">Download CV</a>
+                </div>
+
+                <div class="about-col-2"><center>
+                    <div class="tab-titles">
+                        <p class="tablinks active-link" onclick="opentab(event, 'skills')"><span class="coll1">Skills</span></p>
+                        <p class="tablinks" onclick="opentab(event, 'education')"><span class="coll2">Education</span></p>
+                        
+                    </div></center>
+
+                    <div class="tabcontents active-tab" id="skills">
+                        <div class="skills__container container grid">
+                            <div class="skills__container-box">
+                                <img class="skills__container-img" src="images/java.png" alt="java">
+                                     <div class="skills__container-name">Java</div>
+                            </div>
+
+			                <div class="skills__container-box">
+                                <img class="skills__container-img" src="images/spring.png" alt="springboot">
+                                     <div class="skills__container-name">SpringBoot</div>
+                            </div>
+				
+                            <div class="skills__container-box">
+                                <img class="skills__container-img" src="images/react.png" alt="reactjs">
+                                     <div class="skills__container-name">React JS</div>
+                            </div>
+
+        	            <div class="skills__container-box">
+                                <img class="skills__container-img" src="images/html.svg" alt="html">
+                                     <div class="skills__container-name">HTML</div>
+                            </div>
+
+                            <div class="skills__container-box">
+                                <img class="skills__container-img" src="images/css.svg" alt="css">
+                                     <div class="skills__container-name">CSS</div>
+                            </div>
+
+			                <div class="skills__container-box">
+                                <img class="skills__container-img img11" src="images/js.webp" alt="js">
+                                     <div class="skills__container-name">Java Script</div>
+                            </div> 
+
+			                <div class="skills__container-box">
+                                <img class="skills__container-img" src="images/boots.png" alt="bootstrap">
+                                     <div class="skills__container-name">Bootstrap</div>
+                            </div>
+
+			                <div class="skills__container-box">
+                                <img class="skills__container-img" src="images/mysql.png" alt="mongodb">
+                                     <center><div class="skills__container-name">MySQL</div></center>
+                            </div>
+
+                            <div class="skills__container-box">
+                                <img class="skills__container-img" src="images/post.png" alt="postman">
+                                     <div class="skills__container-name">Postman API</div>
+                            </div>
+
+        
+                        </div>
+
+                    </div>
+
+                    <div class="tabcontents" id="education">
+                        <ul>
+                            <li>Ayya Nadar Janaki Ammal College<br>B.Sc. (Computer Science)<br>Year : 2020-2023<br>CGPA: 6.5</li><br>
+                            <li>Government Hr. Sec. School<br>HSC<br>Year : 2020<br>68%</li><br>
+                            <li>Government Hr. Sec. School<br>SSLC<br>Year : 2018<br>74%</b5></li><br>
+                        </ul>
+                    </div>
+
+                   
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var tablinks = document.getElementsByClassName("tablinks");
+        var tabcontents = document.getElementsByClassName("tabcontents");
+
+        function opentab(event, tabname) {
+            for (var tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+
+            for (var tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+<!---------------------------- Projects ----------------------------->
+<div id="services">
+	<div class="container">
+		<h1 class="sub-title">My Project</h1>
+			<div class="services-list">
+				<div>
+					
+					<h2><center>Clocks Shop</center></h2>
+					<p><center>React JS based online platform for selling Clocks and services. This site is comprehensive Clocks collections, view cart.Ensured a responsive design and seamless user experience<br><br>Tech Stacks<br>React JS | Springboot | H2 Console</center></p>
+
+				</div>
+
+				
+				<div>
+					<h2><center>Personal Portfolio</center></h2>
+					<p><center>My Personal portfolio website to discover a showcase of my skills, projects, and certificates, reflecting my passion for innovation and creativity.<br><br>Tech Stacks<br>HTML | CSS | Java Script</center></p>
+
+					
+				</div>
+
+			</div>
+		
+	</div>
+</div>
+
+<! ---------------------------Certificate----------------->
+<div id="certificate">
+	<div class="container">
+		<h1 class="sub-title">Certificate</h1>
+		
+<div>
+					
+
+<div class="w3-content w3-display-container" style="max-width:800px">
+  
+  <img src="./images/certificate.jpg" style="width: 100%;">
+  	
+</div>
+
+<!------------Contact--------->
+<div id="contact">
+	<div class="container">
+		<div class="row">
+			
+			<div class="contact-left">
+				<h1 class="sub-title">Contact Me</h1>
+				<p><i class="fa-solid fa-paper-plane"></i>karthigairajan251102@gmail.com</p>
+				<p><i class="fa-solid fa-phone"></i>+91 9629196431</p><br><br>
+				<div class="social-icons">
+					<a href="https://www.linkedin.com/in/karthigairajan-m/" target="_blank"><i class="fab fa-linkedin"></i></a>
+					<a href="mailto:karthigairajan251102@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+					<a href="https://github.com/Karthigairajan251102"><i class="fab fa-github"></i></a>
+					
+					
+					
+				</div>
+				
+			</div>
+
+			<div class="contact-right">
+				<form name="submit-to-google-sheet" >
+					<input type="text" name="Name" placeholder="Your Name" required>
+					<input type="email" name="Email" placeholder="Your Email" required>
+					<textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+					<button type="submit" class="btn btn2" value="submit" id="submit  ">Submit</button>
+				</form>
+				<span id="msgg"></span>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbztjB2b5-r72ZIXcV7ZRX0qpgTYttxWo9hrM_xmNrzA9FivWKJDPYzKWHSka_2jSo13/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msgg = document.getElementById("msgg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msgg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msgg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  
+
+
+
+	
+
+	<script type="text/javascript">
+		var sidemenu = document.getElementById("sidemenu");
+		function openmenu()
+		{
+			sidemenu.style.right = "0";
+		}
+		function closemenu()
+		{
+			sidemenu.style.right = "-200px";
+		}
+	</script>
+
+
+
+
+
+
+
+</body>
+</html>
