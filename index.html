@@ -10,6 +10,9 @@
 	<script src="https://kit.fontawesome.com/bd6a507ad6.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
 <style>
 .mySlides {display:none}
 .w3-left, .w3-right, .w3-badge {cursor:pointer}
@@ -47,22 +50,38 @@
             </div>
             </nav>
             <a href="#header" class="circle"><i class="fa-solid fa-angles-up up"></i></a>
-            <div class="header-text">
-                <h1>Hi, I'm Karthigairajan M</h1>
-                <p>Web Developer</p><br>
-                <p class="desc">I create seamless web experiences, combining clean design with efficient code. Currently building responsive applications with React.</p>
+            <div class="head-content">
+                <div class="head-image">
+                    <img src="./images/karthi.png" class="myPic" data-aos="slide-right"/>
+                </div>
+                <div class="header-text" data-aos="slide-left">
+                    <h1>Hi, I'm Karthigairajan M</h1>
+                    <p>Web Developer</p><br>
+                    <p class="desc">I create seamless web experiences, combining clean design with efficient code. Currently building responsive applications with React.</p>
                     <br><a href="#contact" class="btn btn2">Contact Me &nbsp &nbsp <i class="fa-regular fa-paper-plane"> </i></a></p>
+                </div>
             </div>
         </div>
     </div>
+
+    <script>
+        AOS.init();
+    </script>
+
+
 	<!----------------------------------About-------------------->
 
-<div id="about">
+<div id="about" data-aos="slide-right">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
                     <h1 class="sub-title">About Me</h1>
-                    <p class="para">Enthusiastic  graduate in computer science and a passion for Web development. Proficient in React JS. Eager to contribute to a dynamic team and apply problem solving skills in a collaborative environment.</p>
+                    <p class="para">
+                        I am Karthigairajan, a highly motivated professional with one year of experience in 
+                        web development at Unitrix Infotech Private Limited. 
+                        I am certified in ReactJS, MongoDB, and NodeJS through EdexTech It Solutiosns, Madurai. 
+                        I am always eager to learn more and contribute to innovative projects.
+                    </p>
                     <a href="./images/Karthigairajan_Bsc.pdf" download="Karthigairajan_Bsc" class="btn btn2">Download CV</a>
                 </div>
 
@@ -100,24 +119,39 @@
                                      <div class="skills__container-name">Java</div>
                             </div>
 
+                             <div class="skills__container-box">
+                                <img class="skills__container-img" src="images/react.png" alt="reactjs">
+                                <div class="skills__container-name">React.js</div>
+                            </div>
+
+                            <div class="skills__container-box">
+                                <img class="skills__container-img" src="images/nextjs.png" alt="nextjs">
+                                <div class="skills__container-name">Next.js</div>
+                            </div>
+
+                            <div class="skills__container-box">
+                                <img class="skills__container-img" src="images/redux.png" alt="redux">
+                                <div class="skills__container-name">Redux</div>
+                            </div>
+
 			                <div class="skills__container-box">
-                                <img class="skills__container-img" src="images/node.png" alt="springboot">
+                                <img class="skills__container-img" src="images/node.png" alt="Nodejs">
                                      <div class="skills__container-name">Node.js</div>
                             </div>
 				
-                            <div class="skills__container-box">
-                                <img class="skills__container-img" src="images/react.png" alt="reactjs">
-                                     <div class="skills__container-name">React JS</div>
-                            </div>
-
 			                <div class="skills__container-box">
                                 <img class="skills__container-img" src="images/mysql.png" alt="mongodb">
                                 <div class="skills__container-name">MySQL</div>
                             </div>
 
-                             <div class="skills__container-box">
+                            <div class="skills__container-box">
                                 <img class="skills__container-img" src="images/mongodb.png" alt="mongodb">
                                 <div class="skills__container-name">MongoDB</div>
+                            </div>
+
+                            <div class="skills__container-box">
+                                <img class="skills__container-img" src="images/git.png" alt="git">
+                                <div class="skills__container-name">Git</div>
                             </div>
         
                         </div>
@@ -126,15 +160,10 @@
 
                     <div class="tabcontents" id="education">
                         <ul>
-                            <li>Ayya Nadar Janaki Ammal College<br>B.Sc. (Computer Science)<br>Year : 2020-2023<br>CGPA: 6.5</li><br>
-                            <li>Government Hr. Sec. School<br>HSC<br>Year : 2020<br>68%</li><br>
-                            <li>Government Hr. Sec. School<br>SSLC<br>Year : 2018<br>74%</b5></li><br>
+                            <li>Ayya Nadar Janaki Ammal College<br>B.Sc. (Computer Science)<br>Year : 2020-2023<br>CGPA: 6.45</li><br>
+                            <li>Government Hr. Sec. School<br>HSC 2020<br>68%<br>SSLC 2018<br>74%</li>
                         </ul>
                     </div>
-
-                   
-
-                    
                 </div>
             </div>
         </div>
@@ -167,48 +196,37 @@
 
 
 <!---------------------------- Projects ----------------------------->
-<div id="services">
+
+<div id="services" data-aos="slide-left">
 	<div class="container">
-		<h1 class="sub-title">My Project</h1>
+		<h1 class="sub-title">Project</h1>
 			<div class="services-list">
                 <div>
-					
-					<h2><center>GI Products Shopping Online</center></h2>
-					<p><center>Developed a website for showcasing and ordering Geograbhical Indication products online.
-                        The platform allows users to explore various GI-certified prodcts from different regions of Tamilnadu 
-                        and place orders directly from verified sellers. The aim was to promote regional Authenticity and 
-                        support traditional artisans and local producers through digital commerce.
-                        <br><br>Tech Stacks<br>HTML | CSS | JavaSript | PHP | MySQL</center></p>
-
+					<h2 style="font-size: 30px;"><center>Spintel-AI</center></h2>
+                    <h3 style="font-size: 25px;"><center>Role: FrontEnd Developer</center></h3>
+					<p><center>
+                        Built a CRM-based web application to monitor and analyze yarn usage and wastage across textile mill operations.
+                        Integrated automated data collection from production units, eliminating manual data entry.
+                        Developed AI-driven analytics engine to detect wastage patterns and suggest process optimizations.
+                        <br><br>Tech Stacks<br>Next.js | React.js | Redux</center>
+                    </p>
+                    <div class="project-images">
+                        <img src="./images/signin.png" style="width: 100%;">
+                        <img src="./images/userlist.png" style="width: 100%;">
+                        <img src="./images/benchmark.png" style="width: 100%;">
+                        <img src="./images/home.png" style="width: 100%;">
+                        <img src="./images/blowroom.png" style="width: 100%;">
+                        <img src="./images/mech.png" style="width: 100%;">
+                    </div>
 				</div>
-				<div>
-					
-					<h2><center>Clocks Shop</center></h2>
-					<p><center>Developed a website for display various watchs models with detail such as brand, 
-                        specifications, features, and price.  The website allows users to browse and compare different watchs, 
-                        helpingcustomers easily view available products before making a purchase.
-                        <br><br>Tech Stacks<br>ReactJS | Node.js | MongoDB</center></p>
-
-				</div>
-
-				
-				<div>
-					<h2><center>Crackers Shop</center></h2>
-					<p><center>Developed a web application for an online crackers shop to streamline the purchase and delivery of festive fireworks. 
-                               The platform allows users to browse products, view offers, place orders.
-                               <br><br>Tech Stacks<br>ReactJS | Redux</center></p>	
-				</div>
-
 			</div>
 		
 	</div>
 </div>
-
 <!---------------------------Certificate----------------->
-<div id="certificate">
+<div id="certificate" data-aos="slide-right">
 	<div class="container">
 		<h1 class="sub-title">Certificate</h1>
-		
 <div>
 					
 
@@ -219,7 +237,7 @@
 </div>
 
 <!------------Contact--------->
-<div id="contact">
+<div id="contact" data-aos="slide-left">
 	<div class="container">
 		<div class="row">
 			
