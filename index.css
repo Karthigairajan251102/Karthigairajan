@@ -8,61 +8,41 @@
 /*---------------------------------------------------------------------------------------------*/
 
 
-
-.colll{
-	display: flex;
-	flex-wrap: wrap;
-	flex-basis: 100%;
-	justify-content: space-between;
-}
-.collll{
-	flex-basis: 10%;
-}
-.colll2{
-	flex-basis: 70%;
-}
-.colll3{
-	flex-basis: 10%;
-}
-
-        
-
-.slider {
-    position: absolute;
-    cursor: pointer;
+.navbar {
+    background-color: #000b1b !important;
+    width: 100%;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    transition: .4s;
-    border-radius: 34px;
+    z-index: 9999;
 }
 
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    transition: .4s;
-    border-radius: 50%;
+.navbar-nav{
+	margin-left: 80px;
+	margin-right: 80px;
 }
 
-input:checked + .slider {
-    background-color: #987070;
+.navbar .nav-link,
+.navbar .navbar-brand {
+    color: white;
+	text-align: center;
 }
 
-input:checked + .slider:before {
-    transform: translateX(26px);
+.navbar .nav-link:hover {
+    color: #eeeeeb;
 }
 
+.navbar-toggler {
+    border-color: white !important;
+}
 
-/*-----------------------------------contact----------------------*/
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D'0%200%2030%2030'%20xmlns%3D'http%3A//www.w3.org/2000/svg'%3E%3Cpath%20stroke%3D'white'%20stroke-width%3D'2'%20stroke-linecap%3D'round'%20stroke-miterlimit%3D'10'%20d%3D'M4%207h22M4%2015h22M4%2023h22'/%3E%3C/svg%3E") !important;
+}
 
-
+/* Remove container spacing */
+.navbar .container-fluid {
+    padding: 0 !important;
+}
 
 
 
@@ -90,6 +70,7 @@ body
 	height: 100%;	
 	background-size: cover;
 	background-position: center;
+	color: white;
 }
 .container{
 	padding: 10px 10%;
@@ -100,42 +81,7 @@ body
     margin: 0;
     padding: 0;
 }
-nav{
 
-
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	flex-wrap: wrap;
-}
-nav ul li{
-	cursor: pointer;
-	display: inline-block;
-	list-style: none;
-	margin: 10px 20px;
-
-}
-nav ul li a{
-	color: #fff;
-	text-decoration: none;
-	font-size: 20px; 
-	position: relative;
-}
-nav ul li a::after{
-	content: '';
-	width: 0 ;
-	height: 3px; 
-	background: #add8e6;
-	position: absolute;
-	left: 0;
-	bottom: -6px;
-	transition: 0.5s;
-}
-nav ul li a:hover::after{
-	color: #add8e6;
-	width: 100%;
-	
-}
 
 
 
@@ -188,6 +134,8 @@ nav ul li a:hover::after{
         grid-template-columns: 1fr;
     }
 }
+
+
 /*-------------------------------------about----------------------------------------------*/
 
 
@@ -339,6 +287,7 @@ body.light-mode .tabcontents{
 }
 #services{
 	font-size: 20px;
+	color: white;
 }
 @media (max-width: 1024px) {
     .project-images {
@@ -350,65 +299,6 @@ body.light-mode .tabcontents{
         grid-template-columns: 1fr;
     }
 }
-/* #services{
-	padding: 30px 0;
-	height: 100%;
-}
-
-body.light-mode .services-list div{
-	background: #fff;
-	color: #232B2B;
-	
-}
-body.light-mode .services-list div a{
-	color: #987070;
-}
-body.light-mode .services-list div  h2{
-	color: #987070;
-}
-.services-list{
-	display: grid;
-	grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
-	grid-gap: 40px;
-	margin-top: 50px;
-}
-.services-list div{
-	background: #000817;
-	padding: 40px;
-	font-size: 18px;
-	font-weight: 300;
-	border-radius: 10px;
-	transition: background 0.5s, transform 0.5s;
-	
-}
-.services-list div i{
-	font-size: 50px;
-	margin-bottom: 30px;
-
-}
-.services-list div  h2{
-	font-size: 24px;
-	font-weight: 600;
-	margin-bottom: 15px;
-
-}
-.services-list div a{
-	text-decoration: none;
-	color: #fff;
-	font-size: 16px;
-	margin-top: 50px;
-
-	display: inline-block;
-}
-.services-list div:hover{
-	background: #000817;
-	transform: translateY(-10px);
-	box-shadow: 2px 2px 2px 2px snow;
-}
-body.light-mode .services-list div:hover {
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-} */
-
 .btn{
 
 	display: block;
@@ -432,7 +322,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	padding: 30px 0;
 	width: 100%;
 	height: 100%;
-	
+	color: white;
 }
 .contact-left
 {
@@ -474,6 +364,7 @@ social-icons{
 display: inline-block;
 background: none;
 border-color: #add8e6;	
+color: white;
 
 }
 .btn.btn2:hover
