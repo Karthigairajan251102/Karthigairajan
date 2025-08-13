@@ -24,6 +24,18 @@
 	position: relative;
 }
 
+.navbar-brand{
+	margin-left: 40px; 
+	font-size: 20px; 
+	font-weight: 800; 
+	color: white;
+}
+@media (max-width: 800px) {
+    .navbar-brand {
+      margin-left: 10px;
+    }
+}
+
 .navbar-nav .nav-link {
   position: relative;
   color: white;
@@ -52,6 +64,18 @@
 
 .navbar-toggler {
     border-color: white !important;
+}
+@media (max-width: 1024px) {
+  .navbar-toggler {
+    margin-left: 40px;
+	margin-right: 40px;
+}
+}
+@media (max-width: 600px) {
+  .navbar-toggler {
+    margin-left: 10px;
+	margin-right: 10px;
+}
 }
 
 .navbar-toggler-icon {
@@ -87,8 +111,8 @@ body
 #header{
 	width: 100%;
 	height: 100%;	
-	background-size: cover;
-	background-position: center;
+	/* background-size: cover;
+	background-position: center; */
 	color: white;
 }
 .container{
@@ -112,6 +136,7 @@ body
 .header-text h1{
 	font-size: 40px;
 	margin-top: 20px;
+	padding-bottom: opx;
 }
 .head-content{
 	display: grid;
@@ -126,6 +151,7 @@ body
 	width: 50%;
 	border-radius: 50%;
 	height: 350px;
+	border: 5px solid whitesmoke;
 }
 @media (max-width: 1024px) {
     .myPic {
